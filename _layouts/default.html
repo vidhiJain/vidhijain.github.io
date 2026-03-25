@@ -90,14 +90,16 @@
                 Vidhi Jain
               </h1>
               <p align="center"> 
-                <strong>email:</strong> {first name}{last name} <em>at</em> cmu <em>dot</em> edu
+                <strong>email:</strong> vidhij <em>at</em> alumni.cmu <em>dot</em> edu
               </p>
               <hr>
               <p>
-                I am a PhD candidate at <a href="https://www.ri.cmu.edu/ri-people/vidhi-jain/">Carnegie Mellon University, Robotics Institute (RI)</a>, where I work closely with <a href="http://yonatanbisk.com/">Yonatan Bisk</a>. 
-                Previously, I have worked at <a href="https://research.google/research-areas/robotics/">Google DeepMind Robotics</a>,
+                I am actively looking for new opportunities in robotics and AI.
+                I completed my PhD at <a href="https://www.ri.cmu.edu/ri-people/vidhi-jain/">Carnegie Mellon University, Robotics Institute (RI)</a>, advised by <a href="http://yonatanbisk.com/">Yonatan Bisk</a>.
+                Previously, I was a Researcher at <a href="https://openai.com/">OpenAI</a> on the AI for Science team,
+                and have worked at <a href="https://research.google/research-areas/robotics/">Google DeepMind Robotics</a>,
                 <a href="https://ai.meta.com/blog/meta-ai-residency-profiles/"> Meta AI </a>
-                and  <a href="https://www.microsoft.com/en-us/research/academic-program/research-fellows-program-at-microsoft-research-india/testimonials/">Microsoft Research India</a>. 
+                and  <a href="https://www.microsoft.com/en-us/research/academic-program/research-fellows-program-at-microsoft-research-india/testimonials/">Microsoft Research India</a>.
               </p>
               <!-- <p>
                 Hi,
@@ -115,9 +117,9 @@
                 <!-- , advised by <a href="https://www.microsoft.com/en-us/research/people/amitdesh/">Amit Deshpande</a> and <a href="https://www.microsoft.com/en-us/research/people/navingo/">Navin Goyal</a>. --> 
               <!-- </p> -->
               <p>
-                I am interested in multimodal representations for adaptable embodied AI.  
-                My long term vision is to develop robots that can perform multiple tasks around the home and learn new skills from their users.
-                My research focuses at the intersection of <strong>language</strong>, <strong>vision</strong> and <strong>actions</strong> to enhance real-time perception, motion control and dialogue for robots.                
+                My research focuses on improving model capabilities in new domains.
+                At OpenAI, I worked on <strong>reasoning models</strong>, <strong>LLM RL post-training</strong>, and <strong>code generation</strong>.
+                During my PhD, I focused on translating implicit human intent, specializing in representions for <strong>language</strong>, <strong>vision</strong>, or <strong>audio</strong>, to influence robot behavior.
               </p>
               <!-- <p>
                 I received a Masters in Robotics  from <a href="https://www.ri.cmu.edu/">CMU RI</a> working on on <a href="https://www.ri.cmu.edu/publications/towards-explainable-embodied-ai/">interpretable embodied AI</a> with <a href="https://www.ri.cmu.edu/ri-faculty/katia-sycara/">Katia Sycara</a>. 
@@ -153,7 +155,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% assign years_ago = site.time | date: "%Y" | minus: 0 %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 2 %}
           {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
           {% if  current_year >= years_ago %}
@@ -179,7 +181,7 @@
         <table style="width:100%;border:1px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% assign years_ago = site.time | date: "%Y" | minus: 0 %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 2 %}
           {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
           {% if  current_year < years_ago %}
